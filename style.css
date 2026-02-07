@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    background: radial-gradient(circle at top, #020b18, #000000);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00bfff;
+}
+
+.terminal {
+    width: 750px;
+    height: 450px;
+    background: rgba(0, 5, 15, 0.95);
+    border: 1px solid #003a5c;
+    box-shadow: 0 0 30px #002a44;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: #66d9ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #0088cc;
+}
+
+.output {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.output p {
+    margin: 4px 0;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #002a44;
+    padding-top: 8px;
+}
+
+.prompt {
+    margin-right: 6px;
+    color: #00eaff;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00eaff;
+    width: 100%;
+    font-size: 14px;
+}
+
+input::selection {
+    background: #005577;
+}
