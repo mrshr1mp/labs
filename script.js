@@ -4,7 +4,7 @@ const output = document.getElementById("output");
 // Obfuscated-ish ARG code
 // Hint idea: AUREX = gold = Au = atomic number 79
 const ACCESS_HASH = btoa("access-file-79");
-
+const COMP = btoa("access-file-79");
 function print(text) {
     const p = document.createElement("p");
     p.textContent = text;
@@ -37,7 +37,11 @@ input.addEventListener("keydown", function (e) {
                 print("FILE_01: aurex.txt");
                 print("FILE_02: ██████████");
                 print("FILE_03: ██████████");
-            } else {
+            } 
+            else if (encoded === COMP){
+                window.open("https://lab.sillygoose12.org/completion.txt", "_blank");
+            }
+            else {
                 print("ACCESS DENIED.");
                 print("WARNING: Unauthorized attempt logged.");
             }
@@ -78,4 +82,5 @@ For your own safety, leave now. -11file`);
         }
     }
 });
+
 
