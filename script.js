@@ -4,7 +4,7 @@ const output = document.getElementById("output");
 // Obfuscated-ish ARG code
 // Hint idea: AUREX = gold = Au = atomic number 79
 const ACCESS_HASH = btoa("access-file-79");
-const COMP = btoa("AUREX-3878");
+const COMP = btoa("aurex-3878");
 function print(text) {
     const p = document.createElement("p");
     p.textContent = text;
@@ -82,6 +82,7 @@ For your own safety, leave now. -11file`);
         }
     }
 });
+
 
 
 
