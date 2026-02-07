@@ -20,7 +20,7 @@ input.addEventListener("keydown", function (e) {
         print("> " + command);
 
         if (command.toLowerCase() === "help") {
-            print("Available commands: AUTH, STATUS, CLEAR");
+            print("Available commands: AUTH, STATUS, warning");
         }
         else if (command.toLowerCase() === "status") {
             print("SYSTEM STATUS: UNSTABLE");
@@ -78,3 +78,4 @@ For your own safety, leave now. -11file`);
         }
     }
 });
+
